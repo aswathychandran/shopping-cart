@@ -1,0 +1,31 @@
+
+<div class="jumbotron text-center">
+                <div style="background-color: blueviolet">
+                <h1>
+                    <div style="color: cyan">PRODUCTS IN CART</div> </h1>
+        </div>
+       
+       
+        <div class="container">
+             <div class="row">
+
+<div *ngFor="let i of data">
+                <div class="col-sm-4">
+
+        
+        <div>id:={{i.id}}</div>
+       <div>name:={{i.name}}</div> 
+        <div>price:={{i.price}}</div>
+
+        <div><img src="{{i.images}}" alt="" width="80" height="30"></div>
+        
+        <div><button (click)="deletefromcart(i)">deletefromcart</button></div>
+        <div><button (click)="incr(i)">+</button>{{i.quantity}}
+              <button (click)="decr(i)">-</button></div>
+</div>
+</div>
+
+        <div><button (click)="proceedtopay()">proceed to pay</button></div>
+<div>Total amount:{{sum}}</div>
+<button>sum</button>
+        

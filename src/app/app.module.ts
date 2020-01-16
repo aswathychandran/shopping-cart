@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProductentryComponent } from './productentry/productentry.component';
+import { ProductlistComponent } from './productlist/productlist.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductentryComponent,
+    ProductlistComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

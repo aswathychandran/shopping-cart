@@ -1,0 +1,38 @@
+
+<div class="jumbotron text-center">
+        <div style="background-color: blueviolet">
+        <h1>
+            <div style="color: cyan">SHOPPING</div> </h1>
+</div>
+
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">product list</a>
+            <a class="navbar-brand" href="#">LOGIN</a>
+          </div>
+        </div></nav>
+
+
+<div class="container">
+        <div class="row">
+
+<div *ngFor="let i of productlist">
+       <div class="col-sm-4">
+
+                 <h3>PRODUCT</h3>
+                    
+    <div>product id:={{i.id}}</div>
+    <div>name:={{i.name}}</div>
+    <div>price:={{i.price}}</div>
+</div>
+<div> </div>
+ 
+    <div><button (click)="addtocart(i)">addtocart</button></div>
+   
+    
+
+
+</div>
+
